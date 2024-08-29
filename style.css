@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: lightblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: dodgerblue;
+    padding: 0 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#grid {
+    height: 500px;
+    width: 500px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    height: calc(100% / 10);
+    flex-basis: calc(100% / 10);
+    border: 1px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell.clicked {
+    background: lightgreen;
+}
